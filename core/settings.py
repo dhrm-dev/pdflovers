@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-lmggm0(4v_cf=japubgv$z9plz-%248(3j^p47lr*=*8ug3ph#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "pdflovers.onrender.com",
+    ".onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
@@ -129,3 +134,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://pdflovers.onrender.com",
+]
